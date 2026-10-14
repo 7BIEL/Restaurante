@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bistrô Sabor&amp;Magia · Camburi, São Sebastião – SP</title>
+  <meta name="description" content="Bistrô Sabor&amp;Magia na Praia de Camburí, São Sebastião (SP): almoço e jantar numa casa de madeira cercada pela mata, com varanda, música ao vivo e cardápio com peixes, massas e pratos à la carte.">
+  <meta name="theme-color" content="#142019">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Bistrô Sabor&amp;Magia">
+  <meta property="og:title" content="Bistrô Sabor&amp;Magia · Camburi, São Sebastião – SP">
+  <meta property="og:description" content="Magia que você sente no paladar. Almoço e jantar na Praia de Camburí, com varanda, música ao vivo e cardápio completo.">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- og:image: usar a URL absoluta de assets/img/hero-noite.jpg quando o domínio estiver definido. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero-noite.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="data/conteudo.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <!-- Sprite de ícones (traço único, 24×24) -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-mesa" viewBox="0 0 24 24"><path d="M12 3 3.5 8.5h17z"/><path d="M12 8.5V21M6 14h12M8 14v7M16 14v7"/></symbol>
+    <symbol id="i-musica" viewBox="0 0 24 24"><path d="M9 18V5.5l11-2V16"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+    <symbol id="i-tela" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12.5" rx="1.5"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-folha" viewBox="0 0 24 24"><path d="M5.5 19.5C4 11 9 4.5 20 4.5c0 10.5-6 16-14.5 15z"/><path d="M5.5 19.5 14 11"/></symbol>
+    <symbol id="i-buffet" viewBox="0 0 24 24"><path d="M4.5 16.5a7.5 7.5 0 0 1 15 0z"/><path d="M12 9V7M10 7h4M3 19.5h18"/></symbol>
+    <symbol id="i-pata" viewBox="0 0 24 24"><circle cx="6.5" cy="10.5" r="1.8"/><circle cx="10" cy="6.5" r="1.8"/><circle cx="14" cy="6.5" r="1.8"/><circle cx="17.5" cy="10.5" r="1.8"/><path d="M8.5 17.5c0-3 1.7-5.5 3.5-5.5s3.5 2.5 3.5 5.5c0 1.6-1.3 2.5-3.5 2.5s-3.5-.9-3.5-2.5z"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 9.2a14 14 0 0 1 19 0M5.6 12.6a9.5 9.5 0 0 1 12.8 0M8.7 16a5 5 0 0 1 6.6 0"/><circle cx="12" cy="19.3" r=".9"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-telefone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.5a11 11 0 0 0 6.5 6.5l1.5-2.3 4.5 1.8V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5z"/></symbol>
+    <symbol id="i-conversa" viewBox="0 0 24 24"><path d="M4 19.5 5.3 16A8 8 0 1 1 8 18.7z"/></symbol>
+    <symbol id="i-email" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m3.5 6 8.5 7 8.5-7"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-calendario" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-sacola" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho" id="topo">
+    <div class="cabecalho__inner container">
+      <a class="logo" translate="no" href="#inicio" aria-label="Bistrô Sabor&amp;Magia — início">
+        <span class="logo__nome">Sabor<span class="logo__e">&amp;</span>Magia</span>
+        <span class="logo__bistro">Bistrô</span>
+      </a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="navegacao">
+        <svg class="icone" aria-hidden="true"><use href="#i-menu"/></svg>
+        <span>Menu</span>
+      </button>
+      <nav class="nav" id="navegacao" aria-label="Principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#horarios">Horários</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="cabecalho__acao" data-render="cta-rota"></div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Abertura -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="hero__midia" data-foto="hero"></div>
+      <div class="hero__inner container">
+        <p class="hero__slogan" data-campo="slogan">Magia que você sente no paladar</p>
+        <h1 id="hero-titulo" class="hero__titulo">Sabores e bons encontros em Camburi</h1>
+        <p class="hero__lead">
+          Almoço e jantar numa casa de madeira cercada pela mata, na Praia de Camburí,
+          em São Sebastião – SP.
+        </p>
+        <div class="hero__acoes">
+          <a class="botao botao--claro" href="#cardapio">Ver cardápio</a>
+          <a class="botao botao--contorno" href="#horarios">Horários e endereço</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faixa de destaques -->
+    <section class="faixa" aria-label="Destaques do bistrô">
+      <ul class="faixa__lista container" data-render="faixa"></ul>
+    </section>
+
+    <!-- Sobre -->
+    <section class="secao sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre__grid">
+        <figure class="sobre__foto sobre__foto--a" data-foto="sobre" data-foto-indice="0"></figure>
+        <div class="sobre__texto">
+          <h2 id="sobre-titulo" class="secao__titulo">Uma casa de madeira em meio à mata de <span data-campo="bairro">Camburi</span></h2>
+          <div class="prosa" data-render="sobre"></div>
+          <p class="atribuicao" data-render="sobre-nota"></p>
+          <a class="link-seta" href="#cozinha">Conheça quem está na cozinha</a>
+        </div>
+        <figure class="sobre__foto sobre__foto--b" data-foto="sobre" data-foto-indice="1"></figure>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section class="secao cozinha" id="cozinha" aria-labelledby="cozinha-titulo">
+      <div class="container cozinha__grid">
+        <figure class="cozinha__principal" data-foto="equipe" data-foto-indice="0"></figure>
+        <div class="cozinha__texto">
+          <h2 id="cozinha-titulo" class="secao__titulo" data-render="equipe-titulo">Quem está na cozinha</h2>
+          <div class="prosa" data-render="equipe"></div>
+          <div class="cozinha__fotos">
+            <figure data-foto="equipe" data-foto-indice="1"></figure>
+            <figure data-foto="equipe" data-foto-indice="2"></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cardápio (opcional: desative em data/conteudo.js) -->
+    <section class="secao cardapio" id="cardapio" aria-labelledby="cardapio-titulo" data-secao="cardapio" hidden>
+      <div class="container">
+        <header class="secao__cabeca">
+          <h2 id="cardapio-titulo" class="secao__titulo">Cardápio</h2>
+          <p class="secao__intro" data-render="cardapio-intro"></p>
+        </header>
+        <div class="pratos" data-render="pratos-fotos"></div>
+        <p class="pratos__nota" data-render="pratos-nota"></p>
+        <div class="cardapio__secoes" data-render="cardapio"></div>
+      </div>
+    </section>
+
+    <!-- Destaque gastronômico (opcional: desative em data/conteudo.js) -->
+    <section class="secao prato" id="destaque" aria-labelledby="prato-titulo" data-secao="destaquePrato" hidden>
+      <div class="container prato__inner">
+        <figure class="prato__midia" data-foto="prato" data-foto-opcional></figure>
+        <div class="prato__texto">
+          <h2 id="prato-titulo" class="prato__titulo">Recomendação de um cliente</h2>
+          <p class="prato__nome" data-render="prato-nome"></p>
+          <p class="prato__obs" data-render="prato-obs"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiência e serviços -->
+    <section class="secao experiencia" id="experiencia" aria-labelledby="experiencia-titulo">
+      <div class="container">
+        <header class="secao__cabeca">
+          <h2 id="experiencia-titulo" class="secao__titulo">À mesa, na varanda ou na cobertura</h2>
+          <p class="secao__intro" data-render="experiencia-fonte"></p>
+        </header>
+        <ul class="destaques" data-render="destaques" aria-label="Destaques"></ul>
+        <div class="grupos" data-render="grupos"></div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="secao galeria" id="galeria" aria-labelledby="galeria-titulo" data-secao="galeria" hidden>
+      <div class="container">
+        <header class="secao__cabeca">
+          <h2 id="galeria-titulo" class="secao__titulo">O bistrô por dentro e por fora</h2>
+        </header>
+        <div class="galeria__grade" data-render="galeria"></div>
+      </div>
+    </section>
+
+    <!-- Avaliações (opcional: desative em data/conteudo.js) -->
+    <section class="secao avaliacoes" id="avaliacoes" aria-labelledby="avaliacoes-titulo" data-secao="avaliacoes" hidden>
+      <div class="container avaliacoes__grid">
+        <header>
+          <h2 id="avaliacoes-titulo" class="secao__titulo">O que as plataformas mostravam</h2>
+          <p class="secao__intro" data-render="avaliacoes-intro"></p>
+        </header>
+        <ul class="notas" data-render="avaliacoes"></ul>
+      </div>
+    </section>
+
+    <!-- Visita: horários e contato -->
+    <section class="secao visita" aria-label="Planeje sua visita">
+      <div class="container visita__grid">
+        <div class="visita__bloco" id="horarios">
+          <h2 class="secao__titulo">Horários</h2>
+          <p class="secao__intro" data-render="horarios-fonte"></p>
+          <table class="tabela-horarios">
+            <caption class="visualmente-oculto">Horário de funcionamento por dia da semana</caption>
+            <thead class="visualmente-oculto">
+              <tr><th scope="col">Dia</th><th scope="col">Horário</th></tr>
+            </thead>
+            <tbody data-render="horarios"></tbody>
+          </table>
+          <p class="nota" data-render="horarios-obs"></p>
+        </div>
+
+        <div class="visita__bloco" id="contato">
+          <h2 class="secao__titulo">Como chegar</h2>
+          <div class="contato__local">
+            <svg class="icone icone--grande" aria-hidden="true"><use href="#i-pin"/></svg>
+            <div>
+              <p class="contato__endereco" data-render="endereco"></p>
+              <p class="contato__localidade" data-campo="localidade">Camburi, São Sebastião – SP</p>
+            </div>
+          </div>
+          <ul class="contato__canais" data-render="canais"></ul>
+          <p class="nota" data-render="contato-pendente"></p>
+
+          <dl class="contato__servicos">
+            <div>
+              <dt><svg class="icone" aria-hidden="true"><use href="#i-calendario"/></svg>Reservas</dt>
+              <dd data-render="reservas"></dd>
+            </div>
+            <div>
+              <dt><svg class="icone" aria-hidden="true"><use href="#i-sacola"/></svg>Para viagem</dt>
+              <dd>O perfil comercial informa que o bistrô oferece refeições para viagem. Consulte a equipe no local.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__inner">
+      <div class="rodape__marca">
+        <p class="logo logo--rodape" translate="no">
+          <span class="logo__nome">Sabor<span class="logo__e">&amp;</span>Magia</span>
+          <span class="logo__bistro">Bistrô</span>
+        </p>
+        <p class="rodape__slogan" data-campo="slogan">Magia que você sente no paladar</p>
+      </div>
+      <div class="rodape__col">
+        <p class="rodape__rotulo">Endereço</p>
+        <p data-render="rodape-endereco" data-campo="localidade">Camburi, São Sebastião – SP</p>
+      </div>
+      <nav class="rodape__col" aria-label="Rodapé">
+        <p class="rodape__rotulo">Navegue</p>
+        <ul class="rodape__nav">
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#horarios">Horários</a></li>
+          <li><a href="#contato">Como chegar</a></li>
+          <li><a href="#topo">Voltar ao topo</a></li>
+        </ul>
+      </nav>
+      <ul class="rodape__links" data-render="redes" aria-label="Redes sociais oficiais"></ul>
+    </div>
+  </footer>
+</body>
+</html>
