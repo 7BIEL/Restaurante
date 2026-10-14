@@ -13,8 +13,11 @@
   <meta property="og:site_name" content="Bistrô Sabor&amp;Magia">
   <meta property="og:title" content="Bistrô Sabor&amp;Magia · Camburi, São Sebastião – SP">
   <meta property="og:description" content="Magia que você sente no paladar. Almoço e jantar na Praia de Camburí, com varanda, música ao vivo e cardápio completo.">
+  <meta property="og:url" content="https://7biel.github.io/Restaurante/">
+  <meta property="og:image" content="https://7biel.github.io/Restaurante/assets/img/hero-noite.jpg">
+  <meta property="og:image:alt" content="Fachada de madeira do Bistrô Sabor&amp;Magia à noite, com varanda iluminada e cordões de luz.">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- og:image: usar a URL absoluta de assets/img/hero-noite.jpg quando o domínio estiver definido. -->
+  <link rel="canonical" href="https://7biel.github.io/Restaurante/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +27,8 @@
 
   <script>document.documentElement.classList.add("js");</script>
   <script src="data/conteudo.js" defer></script>
+  <script src="data/conteudo.en.js" defer></script>
+  <script src="data/textos.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
@@ -47,11 +52,11 @@
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
   </svg>
 
-  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <a class="pular" href="#conteudo" data-i18n="pular">Pular para o conteúdo</a>
 
   <header class="cabecalho" id="topo">
     <div class="cabecalho__inner container">
-      <a class="logo" translate="no" href="#inicio" aria-label="Bistrô Sabor&amp;Magia — início">
+      <a class="logo" translate="no" href="#inicio" aria-label="Bistrô Sabor&amp;Magia — início" data-i18n-aria="logoRotulo">
         <span class="logo__nome">Sabor<span class="logo__e">&amp;</span>Magia</span>
         <span class="logo__bistro">Bistrô</span>
       </a>
@@ -59,16 +64,17 @@
         <svg class="icone" aria-hidden="true"><use href="#i-menu"/></svg>
         <span>Menu</span>
       </button>
-      <nav class="nav" id="navegacao" aria-label="Principal">
+      <nav class="nav" id="navegacao" aria-label="Principal" data-i18n-aria="navRotulo">
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#cardapio">Cardápio</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#horarios">Horários</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre" data-i18n="navSobre">Sobre</a></li>
+          <li><a href="#cardapio" data-i18n="navCardapio">Cardápio</a></li>
+          <li><a href="#experiencia" data-i18n="navExperiencia">Experiência</a></li>
+          <li><a href="#galeria" data-i18n="navGaleria">Galeria</a></li>
+          <li><a href="#horarios" data-i18n="navHorarios">Horários</a></li>
+          <li><a href="#contato" data-i18n="navContato">Contato</a></li>
         </ul>
       </nav>
+      <button class="idioma" type="button" data-idioma hidden lang="en" aria-label="Switch to English">EN</button>
       <div class="cabecalho__acao" data-render="cta-rota"></div>
     </div>
   </header>
@@ -79,20 +85,20 @@
       <div class="hero__midia" data-foto="hero"></div>
       <div class="hero__inner container">
         <p class="hero__slogan" data-campo="slogan">Magia que você sente no paladar</p>
-        <h1 id="hero-titulo" class="hero__titulo">Sabores e bons encontros em Camburi</h1>
-        <p class="hero__lead">
+        <h1 id="hero-titulo" class="hero__titulo" data-i18n="heroTitulo">Sabores e bons encontros em Camburi</h1>
+        <p class="hero__lead" data-i18n="heroLead">
           Almoço e jantar numa casa de madeira cercada pela mata, na Praia de Camburí,
           em São Sebastião – SP.
         </p>
         <div class="hero__acoes">
-          <a class="botao botao--claro" href="#cardapio">Ver cardápio</a>
-          <a class="botao botao--contorno" href="#horarios">Horários e endereço</a>
+          <a class="botao botao--claro" href="#cardapio" data-i18n="heroCardapio">Ver cardápio</a>
+          <a class="botao botao--contorno" href="#horarios" data-i18n="heroHorarios">Horários e endereço</a>
         </div>
       </div>
     </section>
 
     <!-- Faixa de destaques -->
-    <section class="faixa" aria-label="Destaques do bistrô">
+    <section class="faixa" aria-label="Destaques do bistrô" data-i18n-aria="faixaRotulo">
       <ul class="faixa__lista container" data-render="faixa"></ul>
     </section>
 
@@ -101,10 +107,10 @@
       <div class="container sobre__grid">
         <figure class="sobre__foto sobre__foto--a" data-foto="sobre" data-foto-indice="0"></figure>
         <div class="sobre__texto">
-          <h2 id="sobre-titulo" class="secao__titulo">Uma casa de madeira em meio à mata de <span data-campo="bairro">Camburi</span></h2>
+          <h2 id="sobre-titulo" class="secao__titulo" data-i18n="sobreTitulo">Uma casa de madeira em meio à mata de <span data-campo="bairro">Camburi</span></h2>
           <div class="prosa" data-render="sobre"></div>
           <p class="atribuicao" data-render="sobre-nota"></p>
-          <a class="link-seta" href="#cozinha">Conheça quem está na cozinha</a>
+          <a class="link-seta" href="#cozinha" data-i18n="sobreLink">Conheça quem está na cozinha</a>
         </div>
         <figure class="sobre__foto sobre__foto--b" data-foto="sobre" data-foto-indice="1"></figure>
       </div>
@@ -129,7 +135,7 @@
     <section class="secao cardapio" id="cardapio" aria-labelledby="cardapio-titulo" data-secao="cardapio" hidden>
       <div class="container">
         <header class="secao__cabeca">
-          <h2 id="cardapio-titulo" class="secao__titulo">Cardápio</h2>
+          <h2 id="cardapio-titulo" class="secao__titulo" data-i18n="cardapioTitulo">Cardápio</h2>
           <p class="secao__intro" data-render="cardapio-intro"></p>
         </header>
         <div class="pratos" data-render="pratos-fotos"></div>
@@ -143,7 +149,7 @@
       <div class="container prato__inner">
         <figure class="prato__midia" data-foto="prato" data-foto-opcional></figure>
         <div class="prato__texto">
-          <h2 id="prato-titulo" class="prato__titulo">Recomendação de um cliente</h2>
+          <h2 id="prato-titulo" class="prato__titulo" data-i18n="pratoTitulo">Recomendação de um cliente</h2>
           <p class="prato__nome" data-render="prato-nome"></p>
           <p class="prato__obs" data-render="prato-obs"></p>
         </div>
@@ -154,10 +160,10 @@
     <section class="secao experiencia" id="experiencia" aria-labelledby="experiencia-titulo">
       <div class="container">
         <header class="secao__cabeca">
-          <h2 id="experiencia-titulo" class="secao__titulo">À mesa, na varanda ou na cobertura</h2>
+          <h2 id="experiencia-titulo" class="secao__titulo" data-i18n="experienciaTitulo">À mesa, na varanda ou na cobertura</h2>
           <p class="secao__intro" data-render="experiencia-fonte"></p>
         </header>
-        <ul class="destaques" data-render="destaques" aria-label="Destaques"></ul>
+        <ul class="destaques" data-render="destaques" aria-label="Destaques" data-i18n-aria="destaquesRotulo"></ul>
         <div class="grupos" data-render="grupos"></div>
       </div>
     </section>
@@ -166,7 +172,7 @@
     <section class="secao galeria" id="galeria" aria-labelledby="galeria-titulo" data-secao="galeria" hidden>
       <div class="container">
         <header class="secao__cabeca">
-          <h2 id="galeria-titulo" class="secao__titulo">O bistrô por dentro e por fora</h2>
+          <h2 id="galeria-titulo" class="secao__titulo" data-i18n="galeriaTitulo">O bistrô por dentro e por fora</h2>
         </header>
         <div class="galeria__grade" data-render="galeria"></div>
       </div>
@@ -176,7 +182,7 @@
     <section class="secao avaliacoes" id="avaliacoes" aria-labelledby="avaliacoes-titulo" data-secao="avaliacoes" hidden>
       <div class="container avaliacoes__grid">
         <header>
-          <h2 id="avaliacoes-titulo" class="secao__titulo">O que as plataformas mostravam</h2>
+          <h2 id="avaliacoes-titulo" class="secao__titulo" data-i18n="avaliacoesTitulo">O que as plataformas mostravam</h2>
           <p class="secao__intro" data-render="avaliacoes-intro"></p>
         </header>
         <ul class="notas" data-render="avaliacoes"></ul>
@@ -184,15 +190,15 @@
     </section>
 
     <!-- Visita: horários e contato -->
-    <section class="secao visita" aria-label="Planeje sua visita">
+    <section class="secao visita" aria-label="Planeje sua visita" data-i18n-aria="visitaRotulo">
       <div class="container visita__grid">
         <div class="visita__bloco" id="horarios">
-          <h2 class="secao__titulo">Horários</h2>
+          <h2 class="secao__titulo" data-i18n="horariosTitulo">Horários</h2>
           <p class="secao__intro" data-render="horarios-fonte"></p>
           <table class="tabela-horarios">
-            <caption class="visualmente-oculto">Horário de funcionamento por dia da semana</caption>
+            <caption class="visualmente-oculto" data-i18n="horariosLegenda">Horário de funcionamento por dia da semana</caption>
             <thead class="visualmente-oculto">
-              <tr><th scope="col">Dia</th><th scope="col">Horário</th></tr>
+              <tr><th scope="col" data-i18n="horariosDia">Dia</th><th scope="col" data-i18n="horariosHorario">Horário</th></tr>
             </thead>
             <tbody data-render="horarios"></tbody>
           </table>
@@ -200,7 +206,7 @@
         </div>
 
         <div class="visita__bloco" id="contato">
-          <h2 class="secao__titulo">Como chegar</h2>
+          <h2 class="secao__titulo" data-i18n="contatoTitulo">Como chegar</h2>
           <div class="contato__local">
             <svg class="icone icone--grande" aria-hidden="true"><use href="#i-pin"/></svg>
             <div>
@@ -213,12 +219,12 @@
 
           <dl class="contato__servicos">
             <div>
-              <dt><svg class="icone" aria-hidden="true"><use href="#i-calendario"/></svg>Reservas</dt>
+              <dt><svg class="icone" aria-hidden="true"><use href="#i-calendario"/></svg><span data-i18n="reservasTitulo">Reservas</span></dt>
               <dd data-render="reservas"></dd>
             </div>
             <div>
-              <dt><svg class="icone" aria-hidden="true"><use href="#i-sacola"/></svg>Para viagem</dt>
-              <dd>O perfil comercial informa que o bistrô oferece refeições para viagem. Consulte a equipe no local.</dd>
+              <dt><svg class="icone" aria-hidden="true"><use href="#i-sacola"/></svg><span data-i18n="viagemTitulo">Para viagem</span></dt>
+              <dd data-i18n="viagemTexto">O perfil comercial informa que o bistrô oferece refeições para viagem. Consulte a equipe no local.</dd>
             </div>
           </dl>
         </div>
@@ -236,19 +242,19 @@
         <p class="rodape__slogan" data-campo="slogan">Magia que você sente no paladar</p>
       </div>
       <div class="rodape__col">
-        <p class="rodape__rotulo">Endereço</p>
+        <p class="rodape__rotulo" data-i18n="rodapeEndereco">Endereço</p>
         <p data-render="rodape-endereco" data-campo="localidade">Camburi, São Sebastião – SP</p>
       </div>
-      <nav class="rodape__col" aria-label="Rodapé">
-        <p class="rodape__rotulo">Navegue</p>
+      <nav class="rodape__col" aria-label="Rodapé" data-i18n-aria="rodapeRotulo">
+        <p class="rodape__rotulo" data-i18n="rodapeNavegue">Navegue</p>
         <ul class="rodape__nav">
-          <li><a href="#cardapio">Cardápio</a></li>
-          <li><a href="#horarios">Horários</a></li>
-          <li><a href="#contato">Como chegar</a></li>
-          <li><a href="#topo">Voltar ao topo</a></li>
+          <li><a href="#cardapio" data-i18n="rodapeCardapio">Cardápio</a></li>
+          <li><a href="#horarios" data-i18n="rodapeHorarios">Horários</a></li>
+          <li><a href="#contato" data-i18n="rodapeComoChegar">Como chegar</a></li>
+          <li><a href="#topo" data-i18n="rodapeTopo">Voltar ao topo</a></li>
         </ul>
       </nav>
-      <ul class="rodape__links" data-render="redes" aria-label="Redes sociais oficiais"></ul>
+      <ul class="rodape__links" data-render="redes" aria-label="Redes sociais oficiais" data-i18n-aria="redesRotulo"></ul>
     </div>
   </footer>
 </body>

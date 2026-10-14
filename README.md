@@ -11,6 +11,17 @@ Site estático em HTML, CSS e JavaScript, sem dependências nem etapa de build.
 - `assets/js/main.js` — preenche a página a partir dos dados
 - `assets/img/` — fotos do bistrô
 - `data/conteudo.js` — **todo o conteúdo editável**: horários, cardápio, serviços, avaliações, endereço, contatos e fotos
+- `data/conteudo.en.js` — tradução em inglês dos textos de `conteudo.js` (mesma estrutura e ordem; só textos)
+- `data/textos.js` — textos da interface em português e inglês
+
+## Idiomas (PT/EN)
+
+O botão no cabeçalho alterna entre português e inglês. A escolha fica salva no navegador e também pode ser aberta pelo link `?lang=en`.
+Ao incluir ou remover um item em `conteudo.js` (por exemplo, um prato), faça o mesmo, na mesma posição, em `conteudo.en.js`.
+
+## Publicação
+
+Publicado pelo GitHub Pages a partir da branch `main`, pasta raiz (`/`): https://7biel.github.io/Restaurante/
 
 ## Como atualizar o conteúdo
 

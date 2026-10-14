@@ -261,6 +261,22 @@ a {
 }
 .nav a:hover::after { transform: scaleX(1); }
 
+.idioma {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--linha);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--texto);
+  font: 600 0.85rem var(--sans);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.idioma:hover { border-color: var(--acento); color: var(--acento); }
+.idioma[hidden] { display: none; }
+
 .cabecalho__acao:empty { display: none; }
 .cabecalho__acao .botao { min-height: 2.75rem; padding: 0.5rem 1rem; font-size: 0.9rem; }
 
@@ -307,6 +323,9 @@ a {
 }
 @media (max-width: 34rem) {
   .cabecalho__acao { display: none; }
+  .cabecalho__inner { gap: 0.5rem; }
+  .cabecalho .logo__nome { font-size: 1.1rem; }
+  .menu-botao { padding-inline: 0.7rem; }
 }
 
 /* ---------- Botões e links ---------- */
